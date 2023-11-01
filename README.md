@@ -41,7 +41,13 @@ Modern technologies and Cloud enable rapid experimentation and development of di
 
 # Sequence diagrams
 - [Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
--
+- [GBIF Repository upload](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20GBIF.png)
+- [Third party analysis](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20Third%20party%20analysis.png)
+- [Camera control functionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-Camera%20Control.png)
+- [Camera alert functionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
+- [iNaturralist uploads](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/iNaturalist.png)
+- [Camera Alert functionality]()
+
 
 
  
