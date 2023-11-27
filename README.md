@@ -1,6 +1,5 @@
 # WildLife.AI
 
-
 # Prelude
 
 All successful initiatives stories start with a problem to solve. Here is one very deep and crucial for the mankind -"Conservation of wildlife".The conservation of wildlife is indeed a crucial aspect of our ecosystem, with far-reaching implications for both the natural world and human society. Many species are on the brink of extinction or have already disappeared, largely due to habitat destruction, climate change, poaching, and various human activities. To counter this trend, wildlife conservation efforts have gained momentum globally, and the incorporation of technology, especially machine learning and AI, has significantly enhanced these initiatives.
@@ -48,6 +47,31 @@ Modern technologies and Cloud enable rapid experimentation and development of di
 - [iNaturralist uploads](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/iNaturalist.png)
 - [Model Ingestion to Camera funtionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Model%20Ingestion%20to%20Camera.png)
 - [Metadata Prediction and Sharing](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Metadata%20Prediction%20and%20Sharing.png)
+
+# Architectural Characteristics
+
+1. Scalability: The overall architecture We proposed with AI is designed to be scalable to meet the growing needs of wildlife conservation efforts. The architecture is designed to handle increasing data volumes and user demand, ensuring that it can effectively support conservation efforts across a wide range of scales.
+ 
+2. Flexibility: The camera's software and hardware components are designed to be adaptable, allowing for customization and integration with various sensors, communication technologies((Lorawan, 3G, Satellite)), preferred third-party integrations  and external devices allow for easy deployment in diverse environments, from remote wilderness areas to densely populated regions i.e the open-source nature of the proposed solution enables customization and adaptation to specific conservation needs. Users can modify the camera's configuration, train species identification models for local wildlife, adding local CPUs RPI and AWS Snowcone and integrate the camera with existing conservation data management systems.
+ 
+3. Security: The camera employs robust security protocols, encryption techniques and access controls, to protect sensitive data and prevent unauthorized access, ensuring the integrity of conservation efforts and protecting both wildlife and user information.
+ 
+4. Fault Tolerance: The camera's hardware and software incorporates fault tolerance mechanisms within the firmware to minimize downtime and ensure continuous operation, data continuity even in challenging environments.
+ 
+5. Usability: The camera interface are designed to be intuitive and user-friendly, making it easy for biologists and nature enthusiasts with all levels of technical expertise to operate and manage the camera, training models and uploading training models effectively.
+ 
+6. Supportability: We are committed to providing comprehensive customer support including documentation, tutorials, and community forums and software updates, ensuring that users have the resources they need to maximize the camera's capabilities. A dedicated support team will address user queries, resolve technical issues, and release regular software updates to enhance functionality and security by taking user feedback.
+ 
+7. Reliability:The components collectively empower users to effortlessly deploy, manage, and extract valuable insights from the wildlife cameras, thereby streamlining conservation efforts on a global scale.
+ 
+8. Extensibility: The architecture is designed to accommodate future advancements in AI technology,edge computing and support the integration of new features and functionalities without disrupting the existing system architecture.
+ 
+9. User-Centric Design: The mobile application is engineered for resilience and user-friendliness, the user can perfom various required opreartions which helps minimize user burden and maximize accessibility.
+ 
+10. Cost-effective: Users can also use their hardware either RPI, AWS Snowcone based on their requirements and bugets.
+ 
+11. Community-Driven Innovation: Developers and researchers, biologists and nature enthusiasts can contribute to the product's evolution by creating new features, optimizing models, and expanding communication protocols. This community-driven approach will accelerate advancements in AI-powered wildlife conservation.
+
 
 
 
