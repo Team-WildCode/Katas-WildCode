@@ -72,19 +72,31 @@ Our platform is designed to fulfill the requirements outlined by Wildlife AI, en
 
 Our proposed mobile app empowers users to effortlessly control cameras, modify settings, and update models without physically accessing the devices. Featuring individual and group registration, varying access levels, and a robust password reset module, the app ensures seamless management, with all data securely stored in a central database.
 
+#### Authentication and Authorization
+
 ![SQD - Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
+
+#### Camera Control
+
 ![SQD-Camera Control](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-Camera%20Control.png)
 
 ### Metadata Sharing and Firmware Integration
 
 The camera, equipped with sensors and an SD card for storage, captures footage and forwards it to the model. This firmware orchestrates communication with memory cards, external devices, and wireless connectivity options. Periodic heartbeat status updates and predicted metdata are sent to mobile application which enable error detection, ensuring efficient data transfer and analysis. Predicted species data is seamlessly relayed to users in real-time. It ensures efficient storage and management of captured images and videos, while also facilitating data transfer to other devices for in-depth analysis.
 
+#### Model Ingestion To Camera
+
 ![Model Ingestion To Camera](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Model%20Ingestion%20to%20Camera.png)
+
+#### Metadata Prediction and Sharing
+
 ![Metadata Prediction and Sharing](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Metadata%20Prediction%20and%20Sharing.png)
 
 ### Adaptive Communication Models
 
 Diverse communication models—LoRaWAN(Places with no cellular network), 3G(Nearby forests, rural areas), Satellite(Sea, forests etc)—are employed based on geographical deployment, catering to various terrains and connectivity challenges. These models are integrated into a comprehensive network stack, ensuring seamless model execution in different environments.
+
+#### Communication Models
 
 ![Communication Modules](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Communication%20Modules%20.png)
 
@@ -94,22 +106,33 @@ Utilizing third-party services like Roboflow, Edge Impulse, or TensorFlow Lite, 
 
 Users can trigger model checkpoint files, stored in a trained model database, to be uploaded and executed on local CPUs (Raspberry Pi or AWS Snowcone) after predicting the new metadata. To accommodate a wide range of deployment scenarios, we offer two hardware variants for running the trained model: Raspberry Pi and AWS Snowcone. Users can select the most suitable option based on their budget and requirements, ensuring optimal performance and cost-effectiveness. The model repository serves as a central hub for storing all checkpoint files, providing a secure and organized environment for managing and accessing AI models.
 
+#### Model Training Repository
+
 ![SQD- Model Training](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20Model%20training.png)
 
 ### Integration with Analysis Platforms
 
 Users gain access to common camera trap labeling platforms such as Wildlife Insights, TrapTagger, and Trapper, fostering video analysis and frame publication. Users can publish frames from the videos to iNaturalist, a renowned citizen science platform, to seek expert opinions on species identification and classification. This collaboration with experts enhances the accuracy of species identification and provides valuable insights for conservation decision-making.The architecture further enhances data utilization by enabling users to convert data to Cantrap DP data exchange format and publish species occurrences to the Global Biodiversity Information Facility (GBIF). This integration facilitates the exchange of critical biodiversity data with global conservation initiatives, amplifying the impact of individual conservation efforts.
 
+#### Third Party Analysis
+
 ![SQD- Third Party Analysis](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20Third%20party%20analysis.png)
+
+#### iNaturralist uploads
+
 ![iNaturralist](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/iNaturalist.png)
+
+#### GBIF Uploads
+
 ![SQD- GBIF](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20GBIF.png)
 
 ### User Feedback and Improvement Loop
 
 We prioritize user feedback by providing a dedicated service for customers to contribute suggestions and improvements. A dedicated user feedback service allows users to provide suggestions and report any issues. All feedback is stored in the user feedback repository for review and action.
 
-![Camera Alert](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
+#### Camera Alert
 
+![Camera Alert](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
 
 # Sequence diagrams
 - [Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
