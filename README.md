@@ -100,7 +100,7 @@ Diverse communication models—LoRaWAN(Places with no cellular network), 3G(Near
 
 #### Communication Models
 
-![Communication Modules](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Communication%20Modules%20.png)
+![Communication Models](https://github.com/Team-WildCode/Katas-WildCode/blob/main/images/Communication%20Models.png)
 
 ### Model Training and Repository
 
@@ -182,6 +182,8 @@ SOA principles are embedded to ensure interoperability between the disparate com
 EDA is leveraged to facilitate real-time communication among the microservices, enabling near-instantaneous responses to events and fulfilling the demand for responsive, dynamic behavior. The event-driven paradigm effectively addresses the constraints of uncertain environments by providing a resilient, asynchronous communication mechanism.
 
 In essence, the proposed architecture harmonizes the strengths of microservices, SOA, and EDA to deliver a robust, scalable, and adaptable solution that meets the demands of near-real-time communication and responsiveness in uncertain environments.
+
+![Architecture Worksheet](https://github.com/Team-WildCode/Katas-WildCode/blob/main/images/Architecture_Worksheet.png)
 
 # ADRs
 
