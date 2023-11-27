@@ -137,16 +137,6 @@ Users gain access to common camera trap labeling platforms such as Wildlife Insi
 
 We prioritize user feedback by providing a dedicated service for customers to contribute suggestions and improvements. A dedicated user feedback service allows users to provide suggestions and report any issues. All feedback is stored in the user feedback repository for review and action.
 
-# Sequence diagrams
-- [Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
-- [GBIF Repository upload](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20GBIF.png)
-- [Third party analysis](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20Third%20party%20analysis.png)
-- [Camera control functionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-Camera%20Control.png)
-- [Camera alert functionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
-- [iNaturralist uploads](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/iNaturalist.png)
-- [Model Ingestion to Camera funtionality](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Model%20Ingestion%20to%20Camera.png)
-- [Metadata Prediction and Sharing](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/Metadata%20Prediction%20and%20Sharing.png)
-
 ## Architectural Characteristics
 
 1. **Scalability**: The overall architecture We proposed with AI is designed to be scalable to meet the growing needs of wildlife conservation efforts. The architecture is designed to handle increasing data volumes and user demand, ensuring that it can effectively support conservation efforts across a wide range of scales.
