@@ -18,7 +18,7 @@ TABLE OF CONTENTS
     - [Integration with Analysis Platforms](https://github.com/Team-WildCode/Katas-WildCode/#integration-with-analysis-platforms)
     - [User Feedback and Improvement Loop](https://github.com/Team-WildCode/Katas-WildCode/#user-feedback-and-improvement-loop)
  - [Architectural Characteristics](https://github.com/Team-WildCode/Katas-WildCode/#architectural-characteristics)
- - [Architectural Style](#long-term-expansions)
+ - [Architecture Style](#long-term-expansions)
 - [ADR's](https://github.com/Team-WildCode/Katas-WildCode/#adrs)
 - [References](https://github.com/Team-WildCode/Katas-WildCode/#references)
 
@@ -72,17 +72,19 @@ Our platform is designed to fulfill the requirements outlined by Wildlife AI, en
 
 Our proposed mobile app empowers users to effortlessly control cameras, modify settings, and update models without physically accessing the devices. Featuring individual and group registration, varying access levels, and a robust password reset module, the app ensures seamless management, with all data securely stored in a central database.
 
-#### Authentication and Authorization
-
-![SQD - Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
-
 #### Camera Control
 
 ![SQD-Camera Control](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-Camera%20Control.png)
 
-### Metadata Sharing and Firmware Integration
+#### Authentication and Authorization
 
-The camera, equipped with sensors and an SD card for storage, captures footage and forwards it to the model. This firmware orchestrates communication with memory cards, external devices, and wireless connectivity options. Periodic heartbeat status updates and predicted metdata are sent to mobile application which enable error detection, ensuring efficient data transfer and analysis. Predicted species data is seamlessly relayed to users in real-time. It ensures efficient storage and management of captured images and videos, while also facilitating data transfer to other devices for in-depth analysis.
+![SQD - Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
+
+### Notification Alerts and Metadata Sharing
+
+The camera, equipped with sensors and an SD card for storage, captures footage and forwards it to the model. This firmware orchestrates communication with memory cards, external devices, and wireless connectivity options. 
+
+Periodic heartbeat status updates and predicted metdata are sent to mobile application which enable error detection, ensuring efficient data transfer and analysis. Predicted species data is seamlessly relayed to users in real-time. It ensures efficient storage and management of captured images and videos, while also facilitating data transfer to other devices for in-depth analysis.
 
 #### Model Ingestion To Camera
 
@@ -110,6 +112,11 @@ Users can trigger model checkpoint files, stored in a trained model database, to
 
 ![SQD- Model Training](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD-%20Model%20training.png)
 
+#### Camera Alert
+
+![Camera Alert](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
+
+
 ### Integration with Analysis Platforms
 
 Users gain access to common camera trap labeling platforms such as Wildlife Insights, TrapTagger, and Trapper, fostering video analysis and frame publication. Users can publish frames from the videos to iNaturalist, a renowned citizen science platform, to seek expert opinions on species identification and classification. This collaboration with experts enhances the accuracy of species identification and provides valuable insights for conservation decision-making.The architecture further enhances data utilization by enabling users to convert data to Cantrap DP data exchange format and publish species occurrences to the Global Biodiversity Information Facility (GBIF). This integration facilitates the exchange of critical biodiversity data with global conservation initiatives, amplifying the impact of individual conservation efforts.
@@ -129,10 +136,6 @@ Users gain access to common camera trap labeling platforms such as Wildlife Insi
 ### User Feedback and Improvement Loop
 
 We prioritize user feedback by providing a dedicated service for customers to contribute suggestions and improvements. A dedicated user feedback service allows users to provide suggestions and report any issues. All feedback is stored in the user feedback repository for review and action.
-
-#### Camera Alert
-
-![Camera Alert](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/cameraAlert.png)
 
 # Sequence diagrams
 - [Authentication and Authorization](https://github.com/Team-WildCode/Katas-WildCode/blob/main/Sequence%20Diagram/SQD%20-%20Authentication%20and%20Authorization.png)
@@ -170,6 +173,15 @@ We prioritize user feedback by providing a dedicated service for customers to co
 
 ## Architecture Style
 
+The proposed solution utilizes a synergistic combination of microservices, service-oriented architecture (SOA), and event-driven architecture (EDA) to achieve the desired functionality and address the aforementioned challenges.
+
+Microservices architecture is employed to compartmentalize the application into independent, fine-grained services, each responsible for a specific business capability. This modular approach fosters increased agility, scalability, and fault tolerance. The services communicate seamlessly through well-defined APIs, promoting loose coupling and simplified development.
+
+SOA principles are embedded to ensure interoperability between the disparate components, enabling seamless integration with existing systems and facilitating the creation of reusable, adaptable applications.
+
+EDA is leveraged to facilitate real-time communication among the microservices, enabling near-instantaneous responses to events and fulfilling the demand for responsive, dynamic behavior. The event-driven paradigm effectively addresses the constraints of uncertain environments by providing a resilient, asynchronous communication mechanism.
+
+In essence, the proposed architecture harmonizes the strengths of microservices, SOA, and EDA to deliver a robust, scalable, and adaptable solution that meets the demands of near-real-time communication and responsiveness in uncertain environments.
 
 # ADRs
 
