@@ -20,6 +20,7 @@ TABLE OF CONTENTS
  - [Architectural Characteristics](https://github.com/Team-WildCode/Katas-WildCode/#architectural-characteristics)
  - [Architecture Style](#long-term-expansions)
 - [ADR's](https://github.com/Team-WildCode/Katas-WildCode/#adrs)
+- [Video Presentation](https://github.com/Team-WildCode/Katas-WildCode/blob/main/README.md#video-presentation)
 - [References](https://github.com/Team-WildCode/Katas-WildCode/#references)
 
 # Prelude
