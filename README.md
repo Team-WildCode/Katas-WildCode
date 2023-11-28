@@ -165,9 +165,9 @@ We prioritize user feedback by providing a dedicated service for customers to co
 
 The proposed solution utilizes a synergistic combination of microservices, service-oriented architecture (SOA), and event-driven architecture (EDA) to achieve the desired functionality and address the aforementioned challenges.
 
-Microservices architecture is employed to compartmentalize the application into independent, fine-grained services, each responsible for a specific business capability. This modular approach fosters increased agility, scalability, and fault tolerance. The services communicate seamlessly through well-defined APIs, promoting loose coupling and simplified development.
+Microservices architecture is employed to compartmentalize the application into independent, fine-grained services, each responsible for a specific business capability. The services communicate seamlessly through well-defined APIs, promoting loose coupling and simplified development.
 
-SOA principles are embedded to ensure interoperability between the disparate components, enabling seamless integration with existing systems and facilitating the creation of reusable, adaptable applications.
+SOA principles are embedded to ensure interoperability between the disparate components, enabling seamless integration with existing systems.
 
 EDA is leveraged to facilitate real-time communication among the microservices, enabling near-instantaneous responses to events and fulfilling the demand for responsive, dynamic behavior. The event-driven paradigm effectively addresses the constraints of uncertain environments by providing a resilient, asynchronous communication mechanism.
 
@@ -186,6 +186,10 @@ The below ADRs contains the architectural decisions regarding the proposed desig
 [AD003](https://github.com/Team-WildCode/Katas-WildCode/blob/main/ADRs/ADR003%20-%20NotificationAlert.md) - Implementing a system that enables the camera to send periodic heartbeat status updates to the user via a mobile application and interact with the camera software to retrieve prediction metadata.
 
 [AD004](https://github.com/Team-WildCode/Katas-WildCode/blob/main/ADRs/ADR004%20-%20UserFeedbackService.md) - Establish a dedicated User Feedback Service to facilitate seamless communication between users and the development team.
+
+# Video Presentation
+
+[WildCodeWranglers Presentation Video](https://github.com/Team-WildCode/Katas-WildCode/blob/main/WildCodeWranglers%20Presentation%20Video.mp4)
 
 # References
 
